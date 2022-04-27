@@ -17,6 +17,7 @@ android {
 
     }
 
+
     buildTypes {
         release {
             minifyEnabled false
@@ -92,10 +93,28 @@ dependencies {
     //
 
     implementation 'com.google.android.material:material:1.2.1'
+
     //Json
     implementation 'com.squareup.okhttp3:okhttp:4.1.0'
+
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.8.5'
     implementation 'com.fasterxml.jackson.core:jackson-core:2.8.5'
     implementation 'com.fasterxml.jackson.core:jackson-annotations:2.8.5'
     implementation 'com.codepath.libraries:asynchttpclient:2.2.0'
+
+    implementation 'com.google.code.gson:gson:2.8.7'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-jackson:2.1.0'
+
+    implementation 'com.google.firebase:firebase-core:17.2.1'
+    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+
+    implementation 'com.google.firebase:firebase-messaging:+'
+    implementation 'com.google.firebase:firebase-iid:+'
+
+
 }

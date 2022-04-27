@@ -27,7 +27,8 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
         app:tviMirror="true"
-        app:tviOverlaySurface="true" />
+        app:tviOverlaySurface="true"
+        android:visibility="gone"/>
 
     <LinearLayout
         android:id="@+id/linearLayout5"
@@ -68,6 +69,36 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/hangup_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ringingText"
+        android:layout_width="411dp"
+        android:layout_height="123dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvContactName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ringing"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
     </LinearLayout>
 
 

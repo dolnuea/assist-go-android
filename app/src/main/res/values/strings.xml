@@ -986,6 +986,7 @@
     <string name="Messages_list">Messages</string>
     <string name="add_new_message">add message</string>
     <string name="homeMessages_list">Messages</string>
+    <string name="twilio_sdk_starter_server_url">https://rackley-iguana-5070.twil.io/video-token</string>
 
 
 </resources>
