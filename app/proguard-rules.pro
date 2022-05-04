@@ -24,3 +24,4 @@
 -keep class tvi.webrtc.** { *; }
 -keep class com.twilio.video.** { *; }
 -keepattributes InnerClasses
+

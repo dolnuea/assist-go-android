@@ -4,12 +4,44 @@ buildscript {
         google()
         mavenCentral()
     }
+
     dependencies {
+
         classpath 'com.android.tools.build:gradle:7.1.2'
         classpath 'com.google.gms:google-services:4.3.10' //firebase twilio voice
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.8.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.0"
+        classpath("com.google.dagger:hilt-android-gradle-plugin:2.38.1")
     }
+
+    ext.keystore = (project.hasProperty('androidKeystore') ?
+            project.property('androidKeystore') : '/fake/path/to/keystore')
+    ext.keystorePassword = (project.hasProperty('androidKeystorePassword') ?
+            project.property('androidKeystorePassword') : 'fakepassword')
+    ext.releaseKeyAlias = (project.hasProperty('androidReleaseKeyAlias') ?
+            project.property('androidReleaseKeyAlias') : 'fakealias')
+    ext.releaseKeyPassword = (project.hasProperty('androidReleaseKeyPassword') ?
+            project.property('androidReleaseKeyPassword') : 'fakepassword')
+
+    ext.getPropertyValue =  { propertyKey ->
+        def property  = System.getenv(propertyKey)
+        if (property == null) {
+            logger.log(LogLevel.INFO, "Could not locate $propertyKey as environment variable. " +
+                    "Trying local.properties")
+            Properties properties = new Properties()
+            if (project.rootProject.file('local.properties').exists()) {
+                properties.load(project.rootProject.file('local.properties').newDataInputStream())
+                property = properties.getProperty(propertyKey)
+            }
+        }
+        if (property == null) {
+            logger.log(LogLevel.WARN, "$propertyKey unavailable.")
+        }
+        return property
+    }
+
 }
 
 task clean(type: Delete) {

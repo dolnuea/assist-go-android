@@ -9,3 +9,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "AssistGoAndroid"
 include ':app'
+include ':twilio-video-app-android'
+project(':twilio-video-app-android').projectDir=new File('C:\\Users\\dolun\\AndroidStudioProjects\\twilio-video-app-android\\app')
