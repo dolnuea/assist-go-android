@@ -29,6 +29,28 @@ android {
     }
 
     packagingOptions {
+        pickFirst 'lib/arm64-v8a/libenv-jni.so'
+        pickFirst 'lib/x86_64/libenv-jni.so'
+        pickFirst 'lib/armeabi-v7a/libenv-jni.so'
+        pickFirst 'lib/x86/libenv-jni.so'
+
+        pickFirst 'lib/arm64-v8a/libconcealjni.so'
+        pickFirst 'lib/x86_64/libconcealjni.so'
+        pickFirst 'lib/armeabi-v7a/libconcealjni.so'
+        pickFirst 'lib/armeabi/libconcealjni.so'
+        pickFirst 'lib/x86/libconcealjni.so'
+
+        pickFirst 'lib/arm64-v8a/libfb.so'
+        pickFirst 'lib/x86_64/libfb.so'
+        pickFirst 'lib/armeabi-v7a/libfb.so'
+        pickFirst 'lib/armeabi/libfb.so'
+        pickFirst 'lib/x86/libfb.so'
+
+        pickFirst 'lib/arm64-v8a/libtwilio_video_android_so.so'
+        pickFirst 'lib/x86_64/libtwilio_video_android_so.so'
+        pickFirst 'lib/armeabi-v7a/libtwilio_video_android_so.so'
+        pickFirst 'lib/x86/libtwilio_video_android_so.so'
+
         exclude 'META-INF/DEPENDENCIES'
         exclude 'META-INF/NOTICE'
         exclude 'META-INF/LICENSE'
