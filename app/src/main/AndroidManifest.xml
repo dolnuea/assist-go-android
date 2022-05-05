@@ -27,7 +27,6 @@
     <uses-permission android:name="android.permission.MANAGE_OWN_CALLS"/>
 
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -35,24 +34,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AssistGoAndroid"
-        tools:replace="android:theme, android:allowBackup">
+        tools:replace="android:theme, android:allowBackup"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.twilio.video.app.ui.splash.SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:configChanges="orientation|screenSize"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true"
+                tools:targetApi="m">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"
+                    android:pathPrefix="/room"
+                    android:host="@string/web_app_domain"/>
+            </intent-filter>
+        </activity>
         <activity
             android:name=".EnteringActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@style/SplashScreenWindow">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity android:name=".translateActivity">
             android:windowSoftInputMode="stateHidden|adjustPan|adjustNothing">
         </activity>

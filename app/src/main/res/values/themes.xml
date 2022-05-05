@@ -13,7 +13,7 @@
         <!-- Customize your theme here. -->
     </style>
     <style name="SplashScreenWindow" parent="Theme.AssistGoAndroid">
-        <item name="android:windowBackground">@drawable/splash_screen</item>
+<!--        <item name="android:windowBackground">@drawable/splash_screen</item>-->
     </style>
     <style name="Theme.AppCompat.Translucent" parent="Theme.AssistGoAndroid">
         <item name="android:windowNoTitle">true</item>
@@ -28,5 +28,13 @@
         <item name="colorControlNormal">@color/app_color</item>
         <item name="colorControlActivated">#00BCD4</item>
         <item name="colorControlHighlight">#00BCD4</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="colorPrimary">@color/phone_background</item>
+        <item name="colorPrimaryDark">@color/app_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorAccent</item>
     </style>
 </resources>

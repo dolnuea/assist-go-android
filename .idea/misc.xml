@@ -3,9 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/dolun/AndroidStudioProjects/assist-go-android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.226" />
+        <entry key="..\:/Users/dolun/AndroidStudioProjects/assist-go-android/app/src/main/res/drawable/assistgo_logo.xml" value="0.226" />
+        <entry key="..\:/Users/dolun/AndroidStudioProjects/assist-go-android/app/src/main/res/drawable/bg_gradient.xml" value="0.226" />
         <entry key="..\:/Users/dolun/AndroidStudioProjects/assist-go-android/app/src/main/res/drawable/favorite_heart.xml" value="0.224" />
         <entry key="..\:/Users/dolun/AndroidStudioProjects/assist-go-android/app/src/main/res/drawable/favorite_heart_filled.xml" value="0.224" />
+        <entry key="..\:/Users/dolun/AndroidStudioProjects/assist-go-android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.226" />
         <entry key="..\:/Users/dolun/AndroidStudioProjects/assist-go-android/app/src/main/res/drawable/search_bar_background.xml" value="0.2535" />
+        <entry key="..\:/Users/dolun/AndroidStudioProjects/assist-go-android/app/src/main/res/drawable/splash_background.xml" value="0.226" />
+        <entry key="..\:/Users/dolun/AndroidStudioProjects/assist-go-android/app/src/main/res/drawable/splash_fg.xml" value="0.1" />
         <entry key="..\:/Users/dolun/AndroidStudioProjects/assist-go-android/app/src/main/res/layout/activity_entering.xml" value="0.22418478260869565" />
         <entry key="..\:/Users/dolun/AndroidStudioProjects/assist-go-android/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dolun/AndroidStudioProjects/assist-go-android/app/src/main/res/layout/ambulance_page.xml" value="0.22418478260869565" />
@@ -31,6 +37,7 @@
         <entry key="..\:/Users/dolun/AndroidStudioProjects/assist-go-android/app/src/main/res/menu/settingmenu.xml" value="0.2296875" />
         <entry key="..\:/Users/dolun/AndroidStudioProjects/assist-go-android/app/src/main/res/mipmap-anydpi-v26/account.xml" value="0.2595" />
         <entry key="..\:/Users/dolun/AndroidStudioProjects/assist-go-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.121" />
+        <entry key="..\:/Users/dolun/AndroidStudioProjects/assist-go-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.226" />
         <entry key="..\:/Users/dolun/AndroidStudioProjects/assist-go-android/app/src/main/res/xml/searchable.xml" value="0.16927083333333334" />
         <entry key="..\:/Users/sbusa/StudioProjects/assist-go-android/app/src/main/res/layout/ambulance_page.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/sbusa/StudioProjects/assist-go-android/app/src/main/res/layout/call_page.xml" value="0.1308251389482685" />
